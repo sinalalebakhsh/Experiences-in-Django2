@@ -5,6 +5,12 @@
     <title>home</title>
 </head>
 <body>
-    is for example
+
+    {% for view in list_views %}
+        <h1>{{ view.author }}</h1>
+        <p>{{ view.text }}</p>
+        <p>-----------------------------</p>
+    {% endfor %}
+
 </body>
 </html>
